@@ -38,15 +38,15 @@ import cancelSmall from '../resources/cancel-small.svg';
 
 
 export default {
+    components: {
+        PolarisIcon
+    },
     data() {
         return {
             cancelSmall: cancelSmall
         };
     },
     methods: {
-        components: {
-            PolarisIcon
-        },
     }
 };
 </script>
