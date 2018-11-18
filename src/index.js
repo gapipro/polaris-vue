@@ -61,6 +61,7 @@ import PolarisPagination from './components/PolarisPagination.vue';
 import PolarisTabs from './components/PolarisTabs.vue';
 
 import PolarisPopover from './components/PolarisPopover.vue';
+import PolarisModal from './components/PolarisModal.vue';
 
 
 import PolarisTextStyle from './components/PolarisTextStyle.vue';
@@ -175,6 +176,7 @@ export default {
             Tabs:                   PolarisTabs,
 
             Popover:                PolarisPopover,
+            Modal:                  PolarisModal,
 
 
             // Not in main docs
