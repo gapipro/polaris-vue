@@ -1,7 +1,7 @@
 <template>
 <span :class="classes" :aria-label="accessibilityLabel">
     <div v-if="source == 'placeholder' || !finalSource" class="Polaris-Icon__Placeholder"></div>
-    <svg 
+    <svg
         v-if="source != 'placeholder' && finalSource"
         class="Polaris-Icon__Svg"
         :viewBox="finalSource.viewBox"
@@ -58,6 +58,8 @@ import {
     view,
 } from '../resources/icons/';
 
+import confetti from '../resources/banner/confetti.svg';
+
 export const BUNDLED_ICONS = {
     add,
     alert,
@@ -83,6 +85,7 @@ export const BUNDLED_ICONS = {
     circleChevronUp,
     circlePlus,
     conversation,
+    confetti,
     delete: deleteIcon,
     disable,
     dispute,

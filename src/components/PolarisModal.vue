@@ -19,7 +19,7 @@
                         </slot>
                     </div>
 
-                    <div class="modal-footer">
+                    <div class="modal-footer" v-if="hasFooter">
                         <slot name="footer">
                             default footer
                         </slot>
@@ -45,6 +45,11 @@ export default {
         return {
             cancelSmall: cancelSmall
         };
+    },
+    computed: {
+        hasFooter() {
+            return !!this.$slots['footer'];
+        }
     },
     methods: {
     }
