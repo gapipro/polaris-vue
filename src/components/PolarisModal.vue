@@ -41,15 +41,16 @@ export default {
     components: {
         PolarisIcon
     },
+    props: {
+        hasFooter: {
+            type: Boolean,
+            default: true
+        }
+    },
     data() {
         return {
             cancelSmall: cancelSmall
         };
-    },
-    computed: {
-        hasFooter() {
-            return !!this.$slots['footer'];
-        }
     },
     methods: {
     }
